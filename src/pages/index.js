@@ -62,7 +62,8 @@ const features = [
         imageUrl: 'img/undraw_docusaurus_tree.svg',
         description: (
             <>
-                Receive a double protection for viewers who interact with what you render, to prevent bot abuse, spam or cheating.
+                Receive a double protection for viewers who interact with what you render, to
+                prevent bot abuse, spam or cheating.
             </>
         ),
     },
@@ -91,20 +92,29 @@ function Home() {
             title="Customizable extension, promoting interactions between Twitch community and any application"
             description="Tell the extension what you want at any time, see twitch community receives your components displayed, and get messages at every interaction."
         >
-            <header className={clsx('hero hero--primary', styles.heroBanner)}>
+            <header className={clsx('hero hero--dark', styles.heroBanner)}>
                 <div className="container">
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
                     <div className={styles.buttons}>
                         <Link
                             className={clsx(
-                                'button button--outline button--secondary button--lg',
+                                'button button--primary button--lg',
                                 styles.getStarted
                             )}
                             to={useBaseUrl('docs/getting-started/prerequisites')}
                         >
                             Get Started
                         </Link>
+                        <a
+                            className={clsx(
+                                'button button--info button--lg',
+                                styles.demo
+                            )}
+                            href="https://jmcartlamy.github.io/phaser3-bta-tpe/"
+                        >
+                            Demo
+                        </a>
                     </div>
                 </div>
             </header>
