@@ -1,6 +1,7 @@
 module.exports = {
     title: 'Interactive Sync',
-    tagline: 'Customizable extension, promoting interactions between Twitch community and any application',
+    tagline:
+        'Customizable extension, promoting interactions between Twitch community and any application',
     url: 'https://interactive-sync.com',
     baseUrl: '/interactive-sync-docs/',
     onBrokenLinks: 'throw',
@@ -48,7 +49,7 @@ module.exports = {
                 {
                     href: 'https://github.com/jmcartlamy/interactive-sync-docs',
                     position: 'right',
-                    className: 'header-github-link'
+                    className: 'header-github-link',
                 },
             ],
         },
@@ -58,6 +59,10 @@ module.exports = {
                 {
                     title: 'Docs',
                     items: [
+                        {
+                            label: 'What is Interactive Sync?',
+                            to: 'docs',
+                        },
                         {
                             label: 'Getting started',
                             to: 'docs/getting-started/prerequisites',
@@ -82,7 +87,7 @@ module.exports = {
                     items: [
                         {
                             label: 'Join us',
-                            to: 'community',
+                            href: 'https://discord.gg/xfGXX6GAsX',
                         },
                         {
                             label: 'Blog',
@@ -97,6 +102,10 @@ module.exports = {
                 {
                     title: 'More',
                     items: [
+                        {
+                            label: 'Terms of use',
+                            to: 'terms-of-use',
+                        },
                         {
                             label: 'Twitch Dev',
                             href: 'https://dev.twitch.tv/login',

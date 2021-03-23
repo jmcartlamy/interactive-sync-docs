@@ -20,7 +20,7 @@ Developed by 3rd parties, extensions are interactive overlays or panels where tw
 
 ## Promotes interactions
 
-Interactive Sync promotes interactions between Twitch community and any application in a whole new level, by allowing to communicate in many ways with any application that supports the extension.
+Interactive Sync promotes interactions between Twitch community and any application in a whole new level, by allowing to communicate in many ways in any application that supports the extension.
 
 Tell the extension what you want at any time, see twitch community receives your components displayed, and get messages at every interaction.
 
