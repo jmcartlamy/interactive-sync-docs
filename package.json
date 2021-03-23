@@ -1,6 +1,6 @@
 {
     "name": "interactive-sync-docs",
-    "version": "0.1.0",
+    "version": "0.1.0-alpha",
     "scripts": {
         "docusaurus": "docusaurus",
         "start": "docusaurus start",
