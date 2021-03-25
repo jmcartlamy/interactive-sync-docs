@@ -162,7 +162,7 @@ function Community() {
                                 If you have any questions or suggestions about my Terms and
                                 Conditions, do not hesitate to contact me at:
                                 <br />
-                                interactive-sync[at]gmail.com.
+                                contact[at]interactive-sync.com
                             </p>
                         </div>
                     </div>

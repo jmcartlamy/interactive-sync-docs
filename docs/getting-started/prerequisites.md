@@ -45,17 +45,11 @@ sources={{
 
 You have now your Client ID, which can be used for your application!
 
-:::important
-
-**Keep it secret!** As with the secret client, don't push your client ID to a public directory.
-
-:::
-
 ### Send to our whitelist
 
 To add you on the whitelist and be authorized to use our extension, **write us at this address**:
 
-- `interactive-sync(a)gmail.com` **with a synopsis and your Client ID**.
+- `contact[at]interactive-sync.com` **with a synopsis and your Client ID**.
 
 
 ℹ️ *We will not disclose or share your project and Client ID with anyone else.*
