@@ -2,8 +2,8 @@ module.exports = {
     title: 'Interactive Sync',
     tagline:
         'Customizable extension, promoting interactions between Twitch community and any application',
-    url: 'https://interactive-sync.com',
-    baseUrl: '/interactive-sync-docs/',
+    url: 'https://www.interactive-sync.com/',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',

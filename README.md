@@ -2,6 +2,8 @@
 
 Interactive Sync is an [extension](https://www.twitch.tv/p/extensions/) for [twitch.tv](https://www.twitch.tv/), promoting interactions between Twitch community and any application in a whole new level.
 
+See the [Interactive Sync website](https://www.interactive-sync.com/) for more details!
+
 ## Usage
 
 Install and start a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
