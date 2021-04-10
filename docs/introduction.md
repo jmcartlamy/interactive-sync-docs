@@ -14,7 +14,7 @@ import Toggle from '../src/components/Toggle';
 
 Interactive Sync is an [extension](https://www.twitch.tv/p/extensions/) for [twitch.tv](https://www.twitch.tv/), the world's leading live streaming platform. Twitch is where millions of people come together live every day to chat, interact, and make their own entertainment together.
 
-Containing various programs for [brands](https://brand.twitch.tv/), [advertising](https://twitchadvertising.tv/), [affiliations](https://affiliate.twitch.tv/) or [partnerships](https://www.twitch.tv/p/partners/), Twitch contains many extensions that sits inside Twitch and communicates with Twitch to provide extra functionalities. 
+Containing various programs for [brands](https://brand.twitch.tv/), [advertising](https://twitchadvertising.tv/), [affiliations](https://affiliate.twitch.tv/) or [partnerships](https://www.twitch.tv/p/partners/), Twitch contains many extensions that sits inside Twitch and communicates with Twitch to provide extra functionalities.
 
 Developed by 3rd parties, extensions are interactive overlays or panels where twitch community can interact with the streamer.
 
@@ -129,7 +129,7 @@ values={[
 
 Twitch allows users to switch between the default light theme and a dark theme. Interactive Sync listen this context to use palettes to support them.
 
-Have you noticed that the views above change when you switch themes in the documentation? The same happens with the extension. Try it! <Toggle className="custom-toggle" /> 
+Have you noticed that the views above change when you switch themes in the documentation? The same happens with the extension. Try it! <Toggle className="custom-toggle" />
 
 ### Context
 
@@ -165,7 +165,7 @@ alt=""
 
 ### Custom
 
-Custom styles can be defined for each component. 
+Custom styles can be defined for each component.
 
 A wide range of css properties are usable to make a component more colorful, larger or attractive! You can even use custom images to display amazing renderings.
 
@@ -197,21 +197,21 @@ alt=""
 
 </Tabs>
 
-
 <a className="button button--lg button--outline button--block button--primary" href="/docs/getting-started/prerequisites">Get Started</a>
 
 ## Tools
 
 As it is not practical to send "[User Interface](/docs/getting-started/create-ui)" without pre-validation or preview, we added tools to facilitate their creation:
 
-### 🚧 UI Validator
+### [UI Validator](/tools/ui/validator)
 
-UI Validator use the same validation schemas as our EBS to verify if a JSON sent is valid or invalid. A response sent you with the errors if any.
+UI Validator use the same validation schemas as our EBS to verify if a JSON sent is valid or invalid.
 
-*This tool is currently in development*.
+-   If a JSON is invalid, a response sent you with the errors if any.
+-   If a JSON is valid, a normalized response sent you and will be used as a user interface.
 
-### 🚧 UI Sandbox
+### 🚧 UI Sandbox 🚧
 
 UI Sandbox allow to try out and preview what is rendered with a JSON. It uses the same components as our front extension.
 
-*This tool is currently in development*.
+_This tool is currently in development_.

@@ -36,7 +36,8 @@
     width: 200px;
 }
 
-.demo, .getStarted {
+.demo,
+.getStarted {
     margin: 20px 18px;
 }
 
@@ -45,7 +46,8 @@
         flex-direction: column;
     }
 
-    .demo, .getStarted {
+    .demo,
+    .getStarted {
         margin: 10px 18px;
     }
 }

@@ -1,0 +1,44 @@
+.validator {
+    display: flex;
+    padding: 20px 0;
+}
+
+.containerButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.button {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.textarea1 {
+    flex: 1;
+}
+
+.textarea2 {
+    flex: 1;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.errorMessage {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 966px) {
+    .validator {
+        flex-direction: column;
+    }
+}

@@ -11,9 +11,9 @@ function Sandbox() {
         >
             <main>
                 <div className="container margin-vert--xl">
-                    <div class="row">
-                        <div class="col col--6 col--offset-3">
-                            <h1 class="hero__title">🚧 In development 🚧</h1>
+                    <div className="row">
+                        <div className="col col--6 col--offset-3">
+                            <h1 className="hero__title">🚧 In development 🚧</h1>
                             <p>UI Sandbox tool is currently in development.</p>
                             <p>Links that might interest you:</p>
                             <ul>

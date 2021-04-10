@@ -16,7 +16,6 @@
     --ifm-color-primary-lightest: rgb(146, 224, 208);
     --ifm-code-font-size: 95%;
 }
-
 .docusaurus-highlight-code-line {
     background-color: rgb(72, 77, 91);
     display: block;
@@ -50,4 +49,32 @@ html[data-theme='dark'] .header-github-link::before {
     display: inline-flex;
     top: 5px;
     left: 5px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 600px;
+    background: var(--ifm-background-surface-color);
+    resize: vertical;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    color: var(--ifm-font-color-base);
+    box-shadow: inset 0 0 0.25rem #ddd;
+}
+textarea:focus {
+    outline: none;
+    border: 1px solid darken(#ddd, 5%);
+    box-shadow: inset 0 0 0.5rem darken(#ddd, 5%);
+}
+
+html[data-theme='dark'] textarea,
+html[data-theme='dark'] textarea:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 966px) {
+    textarea {
+        min-height: 300px;
+    }
 }
