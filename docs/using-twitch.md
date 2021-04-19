@@ -61,11 +61,20 @@ To see the current Content Security Policy, check the [Twitch reference](https:/
 
 If you desire to customize components, you have to **[follow all guidelines offered by Twitch](https://dev.twitch.tv/docs/extensions/designing)**. A deliberately misleading, inaccessible or unusable design risk to your application a removal from our white list.
 
+
+## Channel points in Extensions
+
+Use of Channel points on Twitch is governed by the [Channel Points Acceptable Use Policy](https://www.twitch.tv/p/fr-fr/legal/channel-points-acceptable-use-policy/).
+
+### 🚧 Channel points integration 🚧
+
+*This functionnality is in development*
+
 ## Bits in Extensions
 
 Use of Bits on Twitch is governed by the [Bits Acceptable Use Policy](https://www.twitch.tv/p/fr-fr/legal/bits-acceptable-use/) and the [Extension Policies](https://dev.twitch.tv/docs/extensions/guidelines-and-policies/#6-bits-in-extensions).
 
-### 🚧 Bits integration
+### 🚧 Bits integration 🚧
 
 *This functionnality is in development*
 
