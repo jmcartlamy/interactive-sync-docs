@@ -11,6 +11,7 @@ module.exports = {
             type: 'category',
             items: [
                 'getting-started/prerequisites',
+                'getting-started/extension',
                 'getting-started/general',
                 'getting-started/javascript',
                 'getting-started/create-ui',
