@@ -42,9 +42,14 @@ module.exports = {
                     ],
                 },
                 {
-                    to: 'blog',
-                    label: 'Blog',
-                    position: 'left',
+                    label: 'Demo',
+                    href: 'https://jmcartlamy.github.io/phaser3-bta-tpe/',
+                },
+
+                {
+                    href: 'https://discord.gg/xfGXX6GAsX',
+                    position: 'right',
+                    className: 'header-discord-link',
                 },
                 {
                     href: 'https://github.com/jmcartlamy/interactive-sync-docs',
@@ -86,16 +91,16 @@ module.exports = {
                     title: 'Community',
                     items: [
                         {
-                            label: 'Join us',
+                            label: 'Discord',
                             href: 'https://discord.gg/xfGXX6GAsX',
-                        },
-                        {
-                            label: 'Blog',
-                            to: 'blog',
                         },
                         {
                             label: 'Github',
                             href: 'https://github.com/jmcartlamy/interactive-sync-docs',
+                        },
+                        {
+                            label: 'Demo',
+                            href: 'https://jmcartlamy.github.io/phaser3-bta-tpe/',
                         },
                     ],
                 },
