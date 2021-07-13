@@ -44,13 +44,3 @@ sources={{
 />
 
 You have now your Client ID, which can be used for your application!
-
-### Send to our whitelist
-
-To add you on the whitelist and be authorized to use our extension, **write us at this address**:
-
-- `contact[at]interactive-sync.com` **with a synopsis and your Client ID**.
-
-
-ℹ️ *We will not disclose or share your project and Client ID with anyone else.*
-

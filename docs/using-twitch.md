@@ -17,11 +17,9 @@ When you decide to integrate our extension **"Interactive Sync"**, keep in mind 
 
 In addition, you must **[register your application](https://dev.twitch.tv/console/apps)** on Twitch to be able to use our extension for the following reasons:
 
-1. We have implemented a **whitelist of twitch registered applications** and we authorize only the identified "client ID".
+1. We use the "client ID" of your application to establish a secure websocket connection with our EBS, including a request on a Twitch API to get several informations of the current streamer. This means that **if Twitch has revoked your application** due to non-compliance with their rules, their API and our back-end **will reject the connection** with an error.
 
-2. We use the "client ID" of your application to establish a secure websocket connection with our EBS, including a request on a Twitch API to get several informations of the current streamer. This means that **if Twitch has revoked your application** due to non-compliance with their rules, their API and our back-end **will reject the connection** with an error.
-
-3. We keep and associate the "client ID" with each connection to prevent possible non-compliance with the twitch rules through the messages sent in JSON. **If any twitch rules are found to have been broken, your application will be removed from our white list, without warning**, in order to comply with the twitch guidelines and policies.
+2. We keep and associate the "client ID" with each connection to prevent possible non-compliance with the twitch rules through the messages sent in JSON. **If any twitch rules are found to have been broken, your application will be added on our blacklist, without warning**, in order to comply with the twitch guidelines and policies.
 
 ## Architectural Reference
 
