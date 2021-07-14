@@ -53,6 +53,10 @@ wss://interactive-sync-ebs.azurewebsites.net/?client_id=<your client ID>&access_
 -   `"An error occurred on token validation: XXXXXX"`
 -   `"We cant find user_id with your token. It must be an user access token retrieved with implitit code flow or authorization code flow."`
 
+#### client id
+
+-   `"An error occurred on ClientID verification: XXXXXX"`
+
 #### user
 
 -   `"An error occurred to retrieve user details: XXXXXX"`
