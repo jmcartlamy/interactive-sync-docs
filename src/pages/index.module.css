@@ -24,21 +24,71 @@
     justify-content: center;
 }
 
-.features {
+.steps {
     display: flex;
     align-items: center;
     padding: 2rem 0;
     width: 100%;
 }
 
-.featureImage {
-    height: 200px;
-    width: 200px;
+.stepImage {
+    height: 100px;
+    padding: 20px 0;
+    width: auto;
 }
 
 .demo,
 .getStarted {
     margin: 20px 18px;
+}
+
+.features {
+    background-color: var(--ifm-color-emphasis-100);
+    padding: 50px 0;
+}
+
+.featureDescription {
+    font-size: 1.25rem;
+}
+
+.featureRow {
+    align-items: center;
+}
+
+.featureRow:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.featureImage {
+    padding: 20px 0;
+}
+
+.extensionTypeTwitch {
+    display: flex !important;
+    margin: auto;
+}
+
+.animationAppEx {
+    width: 70%;
+    position: absolute;
+    left: 54%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    box-shadow: 0px 6px 14px 0px rgb(0 0 0 / 54%);
+    padding: 0;
+}
+
+.animationWSSEx {
+    background-color: #18181a;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 6px 14px 0px rgb(0 0 0 / 54%);
+    margin: 30px 0;
+}
+
+.posRelative {
+    position: relative;
 }
 
 @media screen and (max-width: 480px) {

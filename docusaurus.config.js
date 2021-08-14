@@ -50,6 +50,7 @@ module.exports = {
                     href: 'https://discord.gg/xfGXX6GAsX',
                     position: 'right',
                     className: 'header-discord-link',
+                    alt: 'fsfrs'
                 },
                 {
                     href: 'https://github.com/jmcartlamy/interactive-sync-docs',
