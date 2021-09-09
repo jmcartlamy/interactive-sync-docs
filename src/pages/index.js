@@ -5,21 +5,22 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import styles from './index.module.css';
 
 const steps = [
     {
-        title: '1. Establish a WSS connection',
+        title: '1. Establish a WebSocket connection',
         imageLightUrl: 'img/websocket_logo.svg',
         imageDarkUrl: 'img/websocket_logo.svg',
     },
     {
-        title: '2. Send your components',
+        title: '2. Send your User Interface',
         imageLightUrl: 'img/json_logo_light.png',
         imageDarkUrl: 'img/json_logo_dark.png',
     },
     {
-        title: '3. Receive more interactions',
+        title: '3. Watch the streamers & viewers reacts',
         imageLightUrl: 'img/twitch_logo.svg',
         imageDarkUrl: 'img/twitch_logo.svg',
     },
@@ -132,10 +133,21 @@ function Home() {
     const { siteConfig = {} } = context;
     return (
         <Layout
-            title="Customizable extension, promoting interactions between Twitch community and any application"
-            description="Tell the extension what you want at any time, see twitch community receives your components displayed, and get messages at every interaction."
+            title="Developer tool to create quickly and easily interactions for Twitch"
+            description="Tell what you want at any time, see twitch community receives your components displayed, and get messages at every interaction."
         >
             <header className={clsx('hero hero--dark', styles.heroBanner)}>
+                <BrowserOnly>
+                    {() => {
+                        const generateStars = require('../functions/generateStars').default;
+                        return (
+                            <>
+                                <div className={clsx(styles.star, styles.comet)} />
+                                {window.innerWidth > 1280 ? generateStars(100) : generateStars(50)}
+                            </>
+                        );
+                    }}
+                </BrowserOnly>
                 <div className="container">
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -159,6 +171,9 @@ function Home() {
                 {steps && steps.length > 0 && (
                     <section className={styles.steps}>
                         <div className="container">
+                            <h2 className={styles.stepsTitle}>
+                                How to add Interactive Sync in 3 easy steps:
+                            </h2>
                             <div className="row">
                                 {steps.map((props, idx) => (
                                     <Step key={`step-${idx}`} {...props} />
