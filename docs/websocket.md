@@ -43,21 +43,25 @@ wss://interactive-sync-ebs.azurewebsites.net/?client_id=<your client ID>&access_
 }
 ```
 
-#### query parameters
+##### query parameters
 
 -   `"Query parameters are missing ; connection will be terminated."`
 -   `"ClientID or accessToken is missing ; connection will be terminated."`
 
-#### access token
+##### access token
 
 -   `"An error occurred on token validation: XXXXXX"`
 -   `"We cant find user_id with your token. It must be an user access token retrieved with implitit code flow or authorization code flow."`
 
-#### client id
+##### client id
 
 -   `"An error occurred on ClientID verification: XXXXXX"`
 
-#### user
+##### configuration extension
+
+-   `"An error occurred to set extension configuration: XXXXXX"`
+
+##### user
 
 -   `"An error occurred to retrieve user details: XXXXXX"`
 
@@ -100,11 +104,11 @@ To know how to send User Interface, please read: [Create User Interface](./getti
     "message": null,
     "data": {
         "type": "XXXXX",
-        "payload": { 
-            "id": "XXXXXXXX", 
-            "view": "XXXXXXXXX", 
-            "username": "XXXXXXXX", 
-            "values": { ... } 
+        "payload": {
+            "id": "XXXXXXXX",
+            "view": "XXXXXXXXX",
+            "username": "XXXXXXXX",
+            "values": { ... }
         }
     }
 }
