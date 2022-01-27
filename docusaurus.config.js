@@ -99,8 +99,8 @@ module.exports = {
                             href: 'https://github.com/jmcartlamy/interactive-sync-docs',
                         },
                         {
-                            label: 'Demo',
-                            href: 'https://jmcartlamy.github.io/phaser3-bta-tpe/',
+                            label: 'Example',
+                            href: 'https://github.com/jmcartlamy/phaser3-bta-tpe',
                         },
                     ],
                 },
