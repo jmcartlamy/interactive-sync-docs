@@ -24,7 +24,11 @@ function Sandbox() {
                                     <Link to={useBaseUrl('docs')}>What is Interactive Sync?</Link>
                                 </li>
                                 <li>
-                                    <Link to={useBaseUrl('docs/getting-started/prerequisites')}>
+                                    <Link
+                                        to={useBaseUrl(
+                                            'docs/getting-started/registering-your-application'
+                                        )}
+                                    >
                                         Get Started
                                     </Link>
                                 </li>

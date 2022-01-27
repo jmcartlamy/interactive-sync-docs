@@ -1,7 +1,6 @@
 module.exports = {
     title: 'Interactive Sync',
-    tagline:
-        'Developer tool to create quickly and easily interactions for Twitch',
+    tagline: 'Ready-to-use Twitch extension promoting interactions',
     url: 'https://www.interactive-sync.com/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -42,15 +41,15 @@ module.exports = {
                     ],
                 },
                 {
-                    label: 'Demo',
-                    href: 'https://jmcartlamy.github.io/phaser3-bta-tpe/',
+                    label: 'Example',
+                    href: 'https://github.com/jmcartlamy/phaser3-bta-tpe',
                 },
 
                 {
                     href: 'https://discord.gg/xfGXX6GAsX',
                     position: 'right',
                     className: 'header-discord-link',
-                    alt: 'fsfrs'
+                    alt: 'fsfrs',
                 },
                 {
                     href: 'https://github.com/jmcartlamy/interactive-sync-docs',
@@ -71,7 +70,7 @@ module.exports = {
                         },
                         {
                             label: 'Getting started',
-                            to: 'docs/getting-started/prerequisites',
+                            to: 'docs/getting-started/registering-your-application',
                         },
                     ],
                 },

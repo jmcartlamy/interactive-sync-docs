@@ -39,7 +39,7 @@
     width: auto;
 }
 
-.demo,
+.discover,
 .getStarted {
     margin: 20px 18px;
 }
@@ -51,6 +51,10 @@
 
 .featureDescription {
     font-size: 1.25rem;
+}
+
+.featureDescriptionChild {
+    padding-bottom: 12px;
 }
 
 .featureRow {
@@ -98,7 +102,7 @@
         flex-direction: column;
     }
 
-    .demo,
+    .discover,
     .getStarted {
         margin: 10px 18px;
     }

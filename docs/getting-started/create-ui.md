@@ -3,19 +3,18 @@ id: create-ui
 title: Create User Interface
 ---
 
-All messages sent to our EBS are "[User Interface](/docs/user-interface/root)", a JSON describing all the components you wish to display to the viewers.
+All messages sent to the EBS are "[User Interface](/docs/user-interface/root)", a JSON describing all the components you wish to display to the viewers.
 
 Verified through validation schemas, the message is parsed and rendered with all available components or events on the front side.
 
 ## Structure
 
-When you are ready to send a message, note that our EBS is able to handle only [USVString](https://developer.mozilla.org/en-US/docs/Web/API/USVString).
+When you are ready to send a message, note that the EBS is able to handle only [USVString](https://developer.mozilla.org/en-US/docs/Web/API/USVString).
 
 To do so, **JSON must be stringify** and **following this structure**:
 
 -   **`context`**, with the value `user_interface`, that identifies the context of the message.
 -   **`data`**, that represents your **user interface**
-
 
 ```json
 {
@@ -46,9 +45,9 @@ As each view is completely different visually, the structure differs within each
 
 ### UI Components
 
-This `components` property contains an array of objects, which each object is a component. 
+This `components` property contains an array of objects, which each object is a component.
 
-**Only [`type`](/docs/user-interface/component#type) property is required** within with one of following string: `title`, `button`, `image`, `text`. 
+**Only [`type`](/docs/user-interface/component#type) property is required** within with one of following string: `title`, `button`, `image`, `text`.
 
 Note that a few properties can became required. Eg: if you select "button" for "type", [`name`](/docs/user-interface/component#name) property also becomes required.
 
@@ -100,7 +99,7 @@ For example, we want a button with a label and a title to get people to click on
 }
 ```
 
-When a viewer clicks on the button, a **POST request is made** to our EBS. After processing and validation, we send you a message through the WebSocket with the **name of the button** and others informations.
+When a viewer clicks on the button, a **POST request is made** to the EBS. After processing and validation, we send you a message through the WebSocket with the **name of the button** and others informations.
 
 :::important
 
@@ -124,7 +123,7 @@ At present, there are two types of event components: **[`mouse`](/docs/user-inte
 
 Mouse event is only available on the **video_overlay part**. You have to add a **`type` property** within with one of following string: `mousedown`, `mouseup`.
 
-When a viewer click on the stream, a **POST request is made** with mouse coordinates to our EBS. After processing and validation, we send you **these coordinates** through the WebSocket.
+When a viewer click on the stream, a **POST request is made** with mouse coordinates to the EBS. After processing and validation, we send you **these coordinates** through the WebSocket.
 
 Below an example of mouse event:
 
@@ -200,9 +199,9 @@ Below an example of modal event with a custom `cooldown` :
 
 All components are customisable using the **[`style`](/docs/user-interface/style) property** in the right position.
 
-:::caution
+:::important
 
-If you desire to customize components, you have to **[follow all guidelines offered by Twitch](https://dev.twitch.tv/docs/extensions/designing)**.
+If you desire to customize components, it is recommended to **[follow all guidelines offered by Twitch](https://dev.twitch.tv/docs/extensions/designing)**.
 
 :::
 
@@ -281,3 +280,7 @@ Below the same User Interface than previously with customization:
 ```
 
 **Find out more on the [User Interface documentation](/docs/user-interface/root).**
+
+:::note
+Find out more User Interface examples on our [demo repository](https://github.com/jmcartlamy/phaser3-bta-tpe/tree/master/src/scenes/userInterface)
+:::

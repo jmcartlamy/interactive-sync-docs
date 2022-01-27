@@ -7,7 +7,7 @@ title: WebSocket
 
 ### sent
 
-To know how to implement a Secure WebSocket connection, please read the [General Implementation](./getting-started/general).
+To know how to implement a Secure WebSocket connection, please read the [General Implementation](./getting-started/general-implementation).
 
 -   scheme: `wss`,
 -   host: `interactive-sync-ebs.azurewebsites.net`,

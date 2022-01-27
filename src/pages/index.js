@@ -10,17 +10,17 @@ import styles from './index.module.css';
 
 const steps = [
     {
-        title: '1. Establish a WebSocket connection',
+        title: '1. Easy to connect with WebSocket',
         imageLightUrl: 'img/websocket_logo.svg',
         imageDarkUrl: 'img/websocket_logo.svg',
     },
     {
-        title: '2. Send your User Interface',
+        title: '2. Send prebuilt components in JSON',
         imageLightUrl: 'img/json_logo_light.png',
         imageDarkUrl: 'img/json_logo_dark.png',
     },
     {
-        title: '3. Watch the streamers & viewers reacts',
+        title: '3. Get events from the REST API',
         imageLightUrl: 'img/twitch_logo.svg',
         imageDarkUrl: 'img/twitch_logo.svg',
     },
@@ -28,7 +28,7 @@ const steps = [
 
 const features = [
     {
-        title: 'A Twitch extension',
+        title: 'Create a Twitch extension',
         imageUrl: 'img/extension_type_twitch.png',
         styleName: 'extensionTypeTwitch',
         description: (
@@ -44,12 +44,12 @@ const features = [
         description: (
             <>
                 Tell the extension what you want for your application at any time, see twitch
-                community receives the components displayed, and get messages at every interaction.
+                community receives the components displayed, and get events at every interaction.
             </>
         ),
     },
     {
-        title: 'Creates interactive applications',
+        title: 'Get an interactive application',
         imageUrl: 'img/animation_interactive_app_example.webp',
         backgroundUrl: 'img/bg_shape_animation_2.png',
         styleName: 'animationAppEx',
@@ -61,20 +61,33 @@ const features = [
         ),
     },
     {
-        title: 'Easy to use',
+        title: 'Quickly and easily to configure',
         imageUrl: 'img/animation_websocket_example_app.webp',
         styleName: 'animationWSSEx',
         description: (
             <>
-                Only a registered app on Twitch and a WebSocket connection are required to send
-                "User Interface" and to receive messages.
-                <br />
-                The extension takes care of the rest.
+                <div className={styles.featureDescriptionChild}>
+                    Interactive Sync is a boilerplate to create and configure a Twitch extension
+                    with environment variables.
+                </div>
+                <div className={styles.featureDescriptionChild}>
+                    <span>Containing the </span>
+                    <a href="https://github.com/jmcartlamy/interactive-sync-front/">
+                        front-end extension
+                    </a>
+                    <span> and an </span>
+                    <a href="https://github.com/jmcartlamy/interactive-sync-ebs/">
+                        Extension Backend Service (EBS)
+                    </a>
+                    <span>
+                        , it allows a viewer to perform the actions chosen by your application.
+                    </span>
+                </div>
                 <Link
-                    className={clsx('button button--primary', styles.getStarted)}
-                    to={'docs/getting-started/prerequisites'}
+                    className={clsx('button button--info button--lg', styles.getStarted)}
+                    to={'docs/#components'}
                 >
-                    Get Started
+                    Want to know more ?
                 </Link>
             </>
         ),
@@ -133,7 +146,7 @@ function Home() {
     const { siteConfig = {} } = context;
     return (
         <Layout
-            title="Developer tool to create quickly and easily interactions for Twitch"
+            title="Ready-to-use Twitch extension promoting interactions"
             description="Tell what you want at any time, see twitch community receives your components displayed, and get messages at every interaction."
         >
             <header className={clsx('hero hero--dark', styles.heroBanner)}>
@@ -154,16 +167,16 @@ function Home() {
                     <div className={styles.buttons}>
                         <Link
                             className={clsx('button button--primary button--lg', styles.getStarted)}
+                            to={useBaseUrl('docs/getting-started/registering-your-application')}
+                        >
+                            Get Started
+                        </Link>
+                        <Link
+                            className={clsx('button button--info button--lg', styles.discover)}
                             to={useBaseUrl('docs/#components')}
                         >
-                            Explore
+                            Discover
                         </Link>
-                        <a
-                            className={clsx('button button--info button--lg', styles.demo)}
-                            href="https://jmcartlamy.github.io/phaser3-bta-tpe/"
-                        >
-                            Demo
-                        </a>
                     </div>
                 </div>
             </header>
@@ -172,7 +185,7 @@ function Home() {
                     <section className={styles.steps}>
                         <div className="container">
                             <h2 className={styles.stepsTitle}>
-                                How to add Interactive Sync in 3 easy steps:
+                                Why add Interactive Sync to your application:
                             </h2>
                             <div className="row">
                                 {steps.map((props, idx) => (

@@ -1,13 +1,12 @@
 ---
-id: prerequisites
+id: registering-your-application
 title: Registering your application
-sidebar_label: Prerequisites
 ---
 
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Before get starting, you have to register your application with Twitch according to [our guidelines and policies](/docs/usingtwitch#register-your-application).
+Before get starting, you have to register your application with Twitch according to [our philosophy](/docs/usingtwitch#register-your-application).
 
 ### Log in on Twitch
 

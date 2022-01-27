@@ -6,7 +6,7 @@ function Sandbox() {
     return (
         <Layout
             title="UI Validator"
-            description="UI Validator use the same validation schemas as our EBS to verify if a JSON sent is valid or invalid. A response sent you with the errors if any."
+            description="UI Validator use the same validation schemas as the EBS to verify if a JSON sent is valid or invalid. A response sent you with the errors if any."
         >
             <main>
                 <div className="container margin-vert--xl">
@@ -17,7 +17,8 @@ function Sandbox() {
                                 fallback={<div>UI Validator is only available on client side.</div>}
                             >
                                 {() => {
-                                    const Validator = require('../../../components/Validator/Validator').default;
+                                    const Validator = require('../../../components/Validator/Validator')
+                                        .default;
                                     return <Validator />;
                                 }}
                             </BrowserOnly>

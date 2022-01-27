@@ -10,10 +10,10 @@ module.exports = {
             label: 'Getting Started',
             type: 'category',
             items: [
-                'getting-started/prerequisites',
-                'getting-started/extension',
-                'getting-started/general',
-                'getting-started/javascript',
+                'getting-started/registering-your-application',
+                'getting-started/create-a-twitch-extension',
+                'getting-started/general-implementation',
+                'getting-started/javascript-implementation',
                 'getting-started/create-ui',
             ],
             collapsed: false,
@@ -36,6 +36,6 @@ module.exports = {
                 'user-interface/extension',
                 'user-interface/style',
             ],
-        }
+        },
     ],
 };

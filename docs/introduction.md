@@ -10,19 +10,17 @@ import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Toggle from '../src/components/Toggle';
 
-## A twitch extension
+## Ready-to-use Twitch extension
 
-Interactive Sync is an [extension](https://www.twitch.tv/p/extensions/) for [twitch.tv](https://www.twitch.tv/), the world's leading live streaming platform. Twitch is where millions of people come together live every day to chat, interact, and make their own entertainment together.
+Interactive Sync is a boilerplate to create and configure a [Twitch extension](https://www.twitch.tv/p/extensions/) for [twitch.tv](https://www.twitch.tv/) with environment variables.
 
-Containing various programs for [brands](https://brand.twitch.tv/), [advertising](https://twitchadvertising.tv/), [affiliations](https://affiliate.twitch.tv/) or [partnerships](https://www.twitch.tv/p/partners/), Twitch contains many extensions that sits inside Twitch and communicates with Twitch to provide extra functionalities.
-
-Developed by 3rd parties, extensions are interactive overlays or panels where twitch community can interact with the streamer.
+Containing the [front-end extension](https://github.com/jmcartlamy/interactive-sync-front/) and an [Extension Backend Service (EBS)](https://github.com/jmcartlamy/interactive-sync-ebs/), Interactive Sync is a ready-to-use Twitch extension that allows the Twitch community to perform the actions chosen by your application with interactive overlays or panels.
 
 ## Promotes interactions
 
-Interactive Sync promotes interactions between Twitch community and any application in a whole new level, by allowing to communicate in many ways in any application that supports the extension.
+Interactive Sync promotes interactions between Twitch community and any application in a whole new level, by allowing to communicate in many ways in any application.
 
-Tell the extension what you want at any time, see twitch community receives your components displayed, and get messages at every interaction.
+Tell the extension what you want at any time, see twitch community receives your components displayed, and get events at every interaction.
 
 ## Creates interactive applications
 
@@ -30,19 +28,15 @@ Create a new generation of application promoting interactions whose usage or gam
 
 Ask viewers to click on the overlay to get their coordinates, place button components with cooldown time to create an event, send questions with several possible answers and receive the answers from each viewer, or simply display text or images wherever you want.
 
-## Easy to use
-
-Only a registered app on [Twitch](https://dev.twitch.tv/console/apps/create) and a [WebSocket connection](/docs/getting-started/general) with our "Extension Backend Service" (EBS) are required to send "[User Interface](/docs/getting-started/create-ui)" and to receive messages. The extension takes care of the rest.
-
-Many examples and explanations are available in the documentation!
-
-<a className="button button--lg button--outline button--block button--primary" href="/docs/getting-started/prerequisites">Get Started</a>
+<a className="button button--lg button--outline button--block button--primary" href="/docs/getting-started/registering-your-application">Get Started</a>
 
 ## Components
 
 Want to know what Interactive Sync offers? See below for details of the functionalities.
 
 ### Views
+
+On each extension type, viewers can create actions by clicking on / touching the buttons.
 
 <Tabs
 defaultValue="video-overlay"
@@ -93,6 +87,8 @@ sources={{
 
 ### UI
 
+Several pre-built components add interactions or content.
+
 <Tabs
 className="unique-tabs"
 values={[
@@ -114,6 +110,8 @@ values={[
 </Tabs>
 
 ### Event
+
+Others allow to add events to extend the possibilities.
 
 <Tabs
 className="unique-tabs"
@@ -165,7 +163,7 @@ alt=""
 
 ### Custom
 
-Custom styles can be defined for each component.
+Custom styles can be defined for each pre-built component.
 
 A wide range of css properties are usable to make a component more colorful, larger or attractive! You can even use custom images to display amazing renderings.
 
@@ -197,7 +195,7 @@ alt=""
 
 </Tabs>
 
-<a className="button button--lg button--outline button--block button--primary" href="/docs/getting-started/prerequisites">Get Started</a>
+<a className="button button--lg button--outline button--block button--primary" href="/docs/getting-started/registering-your-application">Get Started</a>
 
 ## Tools
 
@@ -205,13 +203,13 @@ As it is not practical to send "[User Interface](/docs/getting-started/create-ui
 
 ### [UI Validator](/tools/ui/validator)
 
-UI Validator use the same validation schemas as our EBS to verify if a JSON sent is valid or invalid.
+UI Validator use the same validation schemas as the EBS to verify if a JSON sent is valid or invalid.
 
 -   If a JSON is invalid, a response sent you with the errors if any.
 -   If a JSON is valid, a normalized response sent you and will be used as a user interface.
 
 ### 🚧 UI Sandbox 🚧
 
-UI Sandbox allow to try out and preview what is rendered with a JSON. It uses the same components as our front extension.
+UI Sandbox allow to try out and preview what is rendered with a JSON. It uses the same components as the front extension.
 
-_This tool is currently in development_.
+_This tool is to do_.

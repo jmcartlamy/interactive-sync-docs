@@ -7,7 +7,7 @@ title: Using Twitch
 
 ### Disclaimer
 
-When you decide to integrate our extension **"Interactive Sync"**, keep in mind you must abide to **[Twitch Guidelines and policies](https://dev.twitch.tv/docs/extensions/guidelines-and-policies)**, including:
+When you decide to create a new extension with **"Interactive Sync"**, keep in mind you must abide to **[Twitch Guidelines and policies](https://dev.twitch.tv/docs/extensions/guidelines-and-policies)**, including:
 
 -   [Developer Services Agreement](https://www.twitch.tv/p/fr-fr/legal/developer-agreement/),
 -   [Terms of Service](https://www.twitch.tv/p/fr-fr/legal/terms-of-service/),
@@ -15,25 +15,25 @@ When you decide to integrate our extension **"Interactive Sync"**, keep in mind 
 
 ### Register your application
 
-In addition, you must **[register your application](https://dev.twitch.tv/console/apps)** on Twitch to be able to use our extension for the following reasons:
+In addition, you must **[register your application](https://dev.twitch.tv/console/apps)** on Twitch to separate the Twitch extension and your application.
 
-1. We use the "client ID" of your application to establish a secure websocket connection with our EBS, including a request on a Twitch API to get several informations of the current streamer. This means that **if Twitch has revoked your application** due to non-compliance with their rules, their API and our back-end **will reject the connection** with an error.
+EBS use the "client ID" of your application to establish a secure websocket connection, including a request on a Twitch API to get several informations of the current streamer. This means that **if Twitch has revoked your application** due to non-compliance with their rules, your Twitch extension will still be operational.
 
-2. We keep and associate the "client ID" with each connection to prevent possible non-compliance with the twitch rules through the messages sent in JSON. **If any twitch rules are found to have been broken, your application will be added on our blacklist, without warning**, in order to comply with the twitch guidelines and policies.
+If you manage several applications with a single extension, EBS keep and associate the "client ID" with each connection. A "client ID" can be added on a blacklist to prevent the secure websocket connection.
 
 ## Architectural Reference
 
-Our extension is built following the terms described in [Twitch's official documentation](https://dev.twitch.tv/docs/extensions#architectural-reference). This includes several important points listed below.
+Interactive Sync is built following the terms described in [Twitch's official documentation](https://dev.twitch.tv/docs/extensions#architectural-reference). This includes several important points listed below.
 
 ### Identity
 
 Initially, a front extension does not have access to the identity of the viewer that is using it. By default, an opaque identifier is retrieved by EBS when the viewer is logged out of Twitch or is logged in without having given its permission. If the viewer is logged into Twitch and have given its permission, a proper identifier is received by EBS. ([source](https://dev.twitch.tv/docs/extensions#identity))
 
-**Messages between our EBS and your application DOES NOT INCLUDED that proper or opaque identifier**. Instead, you receive the current `display_name` of the user or a string named _"Anonymous"_.
+**Messages between the EBS and your application DOES NOT INCLUDED that proper or opaque identifier**. Instead, you receive the current `display_name` of the user or a string named _"Anonymous"_.
 
 ### Extension Types
 
-We provide several types of extensions for developers to use: Overlay Extension, Panel Extension and Mobile Extension.
+Interactive Sync provides several types of extensions for developers to use: Overlay Extension, Panel Extension and Mobile Extension.
 
 -   Overlay Extension displays on top of the whole video as a transparent overlay.
 -   Panel Extension sits with the rest of the user profile content at the bottom of a Twitch channel.
@@ -57,8 +57,7 @@ To see the current Content Security Policy, check the [Twitch reference](https:/
 
 **Interactive Sync followed the general guidelines of Twitch** when creating layout components and design of the light and dark themes.
 
-If you desire to customize components, you have to **[follow all guidelines offered by Twitch](https://dev.twitch.tv/docs/extensions/designing)**. A deliberately misleading, inaccessible or unusable design risk to your application a removal from our white list.
-
+If you desire to customize components, use the recommendations and **[follow all guidelines offered by Twitch](https://dev.twitch.tv/docs/extensions/designing)**.
 
 ## Channel points in Extensions
 
@@ -66,7 +65,7 @@ Use of Channel points on Twitch is governed by the [Channel Points Acceptable Us
 
 ### 🚧 Channel points integration 🚧
 
-*This functionnality is in development*
+_This functionnality is to do_
 
 ## Bits in Extensions
 
@@ -74,7 +73,7 @@ Use of Bits on Twitch is governed by the [Bits Acceptable Use Policy](https://ww
 
 ### 🚧 Bits integration 🚧
 
-*This functionnality is in development*
+_This functionnality is to do_
 
 :::note
 
